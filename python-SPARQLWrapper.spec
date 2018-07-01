@@ -8,13 +8,13 @@
 Summary:	SPARQL Endpoint interface to Python 2
 Summary(pl.UTF-8):	Interfejs SPARQL Endpoint do Pythona 2
 Name:		python-SPARQLWrapper
-Version:	1.7.6
-Release:	3
+Version:	1.8.2
+Release:	1
 License:	W3C
 Group:		Libraries/Python
 #Source0Download: https://github.com/RDFLib/sparqlwrapper/releases
 Source0:	https://github.com/RDFLib/sparqlwrapper/archive/%{version}/sparqlwrapper-%{version}.tar.gz
-# Source0-md5:	47e60751db71dfc71d024c8b85b5579c
+# Source0-md5:	5d3854284c2fea2e4258eecbdee47760
 URL:		https://rdflib.github.io/sparqlwrapper/
 %{?with_doc:BuildRequires:	epydoc}
 BuildRequires:	rpm-pythonprov
@@ -24,8 +24,9 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python-modules >= 1:2.5
 BuildRequires:	python-setuptools
 %if %{with tests}
+BuildRequires:	python-isodate
 BuildRequires:	python-keepalive >= 0.5
-BuildRequires:	python-rdflib >= 4.0
+BuildRequires:	python-rdflib >= 4.2.2
 %endif
 %endif
 %if %{with python3}
@@ -33,8 +34,9 @@ BuildRequires:	python3-2to3 >= 1:3.2
 BuildRequires:	python3-modules >= 1:3.2
 BuildRequires:	python3-setuptools
 %if %{with tests}
+BuildRequires:	python3-isodate
 BuildRequires:	python3-keepalive >= 0.5
-BuildRequires:	python3-rdflib >= 4.0
+BuildRequires:	python3-rdflib >= 4.2.2
 %endif
 %endif
 Requires:	python-modules >= 1:2.5
