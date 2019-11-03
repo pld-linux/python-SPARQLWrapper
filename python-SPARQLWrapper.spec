@@ -1,20 +1,20 @@
 #
 # Conditional build:
 %bcond_without	doc	# don't build doc
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# do not perform "make test"
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
 Summary:	SPARQL Endpoint interface to Python 2
 Summary(pl.UTF-8):	Interfejs SPARQL Endpoint do Pythona 2
 Name:		python-SPARQLWrapper
-Version:	1.8.2
-Release:	2
+Version:	1.8.4
+Release:	1
 License:	W3C
 Group:		Libraries/Python
 #Source0Download: https://github.com/RDFLib/sparqlwrapper/releases
 Source0:	https://github.com/RDFLib/sparqlwrapper/archive/%{version}/sparqlwrapper-%{version}.tar.gz
-# Source0-md5:	5d3854284c2fea2e4258eecbdee47760
+# Source0-md5:	177c10d032de0f37feb5108120c2bb5a
 URL:		https://rdflib.github.io/sparqlwrapper/
 %{?with_doc:BuildRequires:	epydoc}
 BuildRequires:	rpm-pythonprov
