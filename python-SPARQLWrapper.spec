@@ -9,7 +9,7 @@ Summary:	SPARQL Endpoint interface to Python 2
 Summary(pl.UTF-8):	Interfejs SPARQL Endpoint do Pythona 2
 Name:		python-SPARQLWrapper
 Version:	1.8.4
-Release:	2
+Release:	3
 License:	W3C
 Group:		Libraries/Python
 #Source0Download: https://github.com/RDFLib/sparqlwrapper/releases
